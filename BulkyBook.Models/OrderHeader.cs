@@ -26,16 +26,23 @@ namespace BulkyBook.Models
         public string Carrier { get; set; }
         public string OrderStatus { get; set; }
         public string PaymentStatus { get; set; }
-        public string PaymentDate { get; set; }
-        public string PaymentDueDate { get; set; }
+        public DateTime PaymentDate { get; set; }
+        public DateTime PaymentDueDate { get; set; }
         public string TransactionId { get; set; }
 
+        [Required]
         public string PhoneNumber { get; set; }
+        [Required]
         public string Address1 { get; set; }
+        [Required]
         public string Address2 { get; set; }
+        [Required]
         public string Address3 { get; set; }
+        [Required]
         public string Address4 { get; set; }
+        [Required]
         public string PostalCode { get; set; }
+        [Required]
         public string Name { get; set; }
 
     }
